@@ -1,0 +1,23 @@
+{
+  "name": "eotcnor-platform",
+  "version": "1.0.0",
+  "description": "EOTCNOR Platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EOTCNOR/members-platform.git"
+  },
+  "author": "Abyot Asalefew Gizaw <abyota@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EOTCNOR/members-platform/issues"
+  },
+  "homepage": "https://github.com/EOTCNOR/members-platform#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.6"
+  }
+}
