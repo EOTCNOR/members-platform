@@ -12,10 +12,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { AuthService } from './services/auth.service';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { MembersComponent } from './components/members/members.component';
+import { MemberComponent } from './components/member/member.component';
 // import { FlashMessagesModule } from 'angular2-flash-messages';
 import { AuthGuard } from './guards/auth.guard';
 import { NotAuthGuard } from './guards/notAuth.guard';
+import { MemberDetailComponent } from './components/member-detail/member-detail.component';
+import { MemberAddComponent } from './components/member-add/member-add.component';
+import { MemberSearchComponent } from './components/member-search/member-search.component';
 
 export function tokenGetter() {
   return localStorage.getItem('access_token');
@@ -30,7 +33,10 @@ export function tokenGetter() {
     RegisterComponent,
     LoginComponent,
     ProfileComponent,
-    MembersComponent
+    MemberComponent,
+    MemberDetailComponent,
+    MemberAddComponent,
+    MemberSearchComponent
   ],
   imports: [
     BrowserModule,

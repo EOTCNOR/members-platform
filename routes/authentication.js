@@ -153,8 +153,7 @@ module.exports = (router) => {
        Route to get user's profile data
     =============================================================== */
     router.get('/profile', (req, res) => {
-        // Search for user in database
-        console.log('userId:  ', req);
+        // Search for user in database        
         User.findOne({ _id: req.decoded.userId }).select('username email').exec((err, user) => {
             // Check if error connecting
             if (err) {

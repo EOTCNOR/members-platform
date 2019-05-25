@@ -17,13 +17,13 @@
                 <a class="nav-link" routerLink="/dashboard">Dashboard</a>
             </li>
             <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-                <a class="nav-link" routerLink="/profile">Profile</a>
-            </li>
-            <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-                <a class="nav-link" routerLink="/members">Members</a>
+                <a class="nav-link" routerLink="/member">Members</a>
             </li>
             <li *ngIf="!authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a class="nav-link" routerLink="/login">Login</a>
+            </li>
+            <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                <a class="nav-link" routerLink="/profile">Profile</a>
             </li>
             <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a class="nav-link" href="#" (click)="onLogoutClick()">Logout</a>
